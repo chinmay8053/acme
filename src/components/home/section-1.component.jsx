@@ -3,7 +3,7 @@ import React from "react";
 
 import "./section-1.styles.scss";
 
-function Section1() {
+function HomeSection1() {
   return (
     <section className="section-1">
       <div className="section-hero">
@@ -31,4 +31,4 @@ function Section1() {
   );
 }
 
-export default Section1;
+export default HomeSection1;

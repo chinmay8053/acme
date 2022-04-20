@@ -1,0 +1,130 @@
+.section-2 {
+  padding: 70px 0;
+  background-color: #e4dada4f;
+  .container {
+    padding: 20px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 50px;
+  }
+  .intro {
+    grid-column: span 3;
+    padding: 10px;
+    span {
+      font-size: 16px;
+      color: grey;
+    }
+    p {
+      padding-top: 10px;
+      font-size: 38px;
+      font-weight: 700;
+      color: #333;
+    }
+  }
+
+  .covid {
+    grid-column: span 3;
+    padding: 10px;
+    color: grey;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .card-info {
+    grid-column: span 2;
+    width: 100%;
+    padding: 10px;
+  }
+  .message {
+    padding: 20px 10px;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  //   -----------------------------CARD---------------------------------
+  .square {
+    background-color: #222;
+    color: #f9f9f9;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba($color: #999, $alpha: 1);
+
+    .number {
+      align-self: start;
+      font-size: 44px;
+      padding: 40px 0 0 40px;
+      font-weight: 700;
+    }
+    .title {
+      align-self: center;
+      font-size: 38px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-align: center;
+      width: 250px;
+      letter-spacing: 3px;
+    }
+    .shape {
+      align-self: end;
+      position: relative;
+      height: 100px;
+      img {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+      [data-tri] {
+        transform: translate(-85%, -66%);
+      }
+      [data-square] {
+        transform: translate((-85%, -50%));
+      }
+    }
+  }
+}
+
+@media (max-width: 938px) {
+  .section-2 {
+    .square {
+      .title {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: 728px) {
+  .section-2 {
+    .intro {
+      padding: 0;
+      p {
+        padding-top: 0;
+      }
+    }
+    .grid-5 {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+
+    .card-info {
+      padding: 0;
+    }
+    [data-01] {
+      margin-top: 50px;
+    }
+    .message {
+      padding: 15px 15px 30px;
+      font-size: 16px;
+    }
+  }
+}
