@@ -1,0 +1,45 @@
+.footer {
+  box-sizing: border-box;
+  background-color: #222;
+  padding: 20px 0;
+  color: white;
+
+  .support {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 20px;
+  }
+  .logo {
+    width: 130px;
+  }
+  .img-logo {
+    width: 100%;
+  }
+  .connect {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+  }
+  .icons {
+    color: #eee;
+    cursor: pointer;
+    transition: 250ms;
+    &:hover {
+      color: #999;
+    }
+  }
+  .create {
+    display: flex;
+    justify-content: center;
+    span {
+      cursor: pointer;
+      color: red;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
