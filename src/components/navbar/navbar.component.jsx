@@ -1,5 +1,5 @@
 import { Box, IconButton, Menu } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./navbar.styles.scss";
@@ -22,9 +22,19 @@ function Navbar() {
     setAnchorElNav(null);
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        document.querySelector(".fix").classList.add("fixed");
+      } else {
+        document.querySelector(".fix").classList.remove("fixed");
+      }
+    });
+  });
+
   return (
-    <div className="nav">
-      <div className="fixed">
+    <div className="nav" id="navbar">
+      <div className="fix ">
         <div className="nav-bar">
           <div className="nav-logo">
             <Link to="/">
