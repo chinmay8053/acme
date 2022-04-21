@@ -1,0 +1,39 @@
+.section-3 {
+  box-sizing: border-box;
+  // height: 1000px;
+  .bg-image {
+    background-image: linear-gradient(rgba(34, 34, 34, 0.17), rgb(34, 34, 34)), url(../../assests/mountain-2-Home.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .container {
+    height: 600px;
+    max-width: 1200px;
+    padding: 10px 20px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .statement {
+    text-align: right;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #ddd;
+  }
+  .title {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  .instruction {
+    margin-left: auto;
+    width: 395px;
+    line-height: 1.3;
+    font-size: 18px;
+  }
+  .statement-btn {
+  }
+}

@@ -1,5 +1,5 @@
-import { Button } from "@mui/material";
 import React from "react";
+import { BootstrapButton } from "../custom-button/bootstrapButton.button";
 
 import "./section-1.styles.scss";
 
@@ -11,19 +11,21 @@ function HomeSection1() {
           <h1>Serving you since 1989.</h1>
           <p>Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma City.</p>
           <div className="section-btn">
-            <Button
+            <BootstrapButton
               sx={{
-                color: "white",
-                border: "1px solid black",
+                color: "#ddd",
+                border: "1px solid #ddd",
+                fontWeight: "700",
                 "&:hover": {
-                  border: "1px solid black",
-                  background: "black",
+                  color: "#000",
+                  border: "1px solid #ddd",
+                  background: "#ddd",
                 },
               }}
               variant="outlined"
             >
               Shop Cloth
-            </Button>
+            </BootstrapButton>
           </div>
         </div>
       </div>

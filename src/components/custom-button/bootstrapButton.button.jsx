@@ -6,18 +6,16 @@ export const BootstrapButton = styled(Button)({
   boxShadow: "none",
   textTransform: "none",
   fontSize: 14,
-  padding: "8px 15px",
+  padding: "10px 20px",
   lineHeight: 1,
   backgroundColor: "transparent",
   fontFamily: "inherit",
-  borderRadius: "10px",
-  // color: "white",
+  borderRadius: "5px",
   "&:hover": {
-    backgroundColor: "#1a1c1d",
+    backgroundColor: "#223",
     boxShadow: "none",
   },
   "&:active": {
-    boxShadow: "none",
     backgroundColor: "#1a1c1d",
   },
 });

@@ -7,7 +7,6 @@ function HomeSection2() {
     <section className="section-2">
       <div className="container">
         <div className="grid-5">
-          {/* <div className="support"> */}
           <div className="intro">
             <span>WAYS TO SUPPORT</span>
             <p>Support Acme Outdoors.</p>
@@ -16,8 +15,6 @@ function HomeSection2() {
             COVID-19 has forced us to close our retail space, but we need support from patrons like yourself now more
             than ever. Below, we’ve listed the best ways to help us through this season.
           </div>
-          {/* </div> */}
-          {/* <div className="card"> */}
           <div className="card-info">
             <div className="square" data-01>
               <div className="number">01</div>
@@ -70,8 +67,6 @@ function HomeSection2() {
               family.
             </p>
           </div>
-
-          {/* </div> */}
         </div>
       </div>
     </section>

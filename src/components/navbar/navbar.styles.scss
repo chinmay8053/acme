@@ -1,6 +1,11 @@
 .nav {
   box-sizing: border-box;
-  background-color: #921111;
+  height: 70px;
+  .fixed {
+    position: fixed;
+    background-color: #921111;
+    width: 100vw;
+  }
   .nav-bar {
     margin: 0 auto;
     max-width: 1200px;
