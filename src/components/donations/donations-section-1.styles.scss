@@ -1,0 +1,39 @@
+.donate-section-1 {
+  box-sizing: border-box;
+  color: #fff;
+  .bg-image {
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.56), #222), url(../../assests/friends_running.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 35px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+  }
+  .box {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .title {
+    font-size: 44px;
+  }
+  .sub-title {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+  .statement {
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

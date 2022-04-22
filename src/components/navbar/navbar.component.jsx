@@ -9,7 +9,7 @@ function Navbar() {
   const menuName = [
     { to: "/", name: "Home" },
     { to: "/about", name: "About" },
-    { to: "/donations", name: "Donations" },
+    { to: "/donations", name: "Donate" },
     { to: "/contact", name: "Contact" },
   ];
   const [anchorElNav, setAnchorElNav] = useState(null);
