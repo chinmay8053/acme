@@ -1,11 +1,11 @@
 import React from "react";
 import { BootstrapButton } from "../custom-button/bootstrapButton.button";
 
-import "./section-1.styles.scss";
+import "./home-section-1.styles.scss";
 
 function HomeSection1() {
   return (
-    <section className="section-1">
+    <section className="home-section-1">
       <div className="section-hero">
         <div className="section-intro">
           <h1>Serving you since 1989.</h1>

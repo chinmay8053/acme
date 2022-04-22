@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./section-2.styles.scss";
+import "./home-section-2.styles.scss";
 
 function HomeSection2() {
   return (
-    <section className="section-2">
+    <section className="home-section-2">
       <div className="container">
         <div className="grid-5">
           <div className="intro">

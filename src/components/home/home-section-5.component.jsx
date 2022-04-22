@@ -1,8 +1,8 @@
 import React from "react";
-import "./section-5.styles.scss";
+import "./home-section-5.styles.scss";
 function HomeSection5() {
   return (
-    <section className="section-5">
+    <section className="home-section-5">
       <div className="container">
         {/* ---------------------------hover-------------- */}
         <div className="hover-card">

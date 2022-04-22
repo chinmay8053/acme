@@ -1,0 +1,82 @@
+.about-section-2 {
+  box-sizing: border-box;
+  padding: 100px 0;
+  background-color: #eee;
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    max-width: 570px;
+  }
+  .ask {
+    font-weight: 500;
+    color: #444;
+  }
+  .intro-title {
+    font-size: 32px;
+    color: #222;
+  }
+  .intro-info {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    padding: 60px 0;
+    text-align: left;
+  }
+  .service {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .service-icon {
+  }
+  .service-title {
+    font-size: 22px;
+  }
+  .service-info {
+    color: #444;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1160px) {
+  .about-section-2 {
+    .services {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+    }
+    .service {
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 673px) {
+  .about-section-2 {
+    .services {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+    .service {
+      text-align: center;
+      gap: 15px;
+    }
+  }
+}

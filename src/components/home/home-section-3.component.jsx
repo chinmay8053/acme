@@ -1,10 +1,10 @@
 import React from "react";
 import { BootstrapButton } from "../custom-button/bootstrapButton.button";
 
-import "./section-3.styles.scss";
+import "./home-section-3.styles.scss";
 function HomeSection3() {
   return (
-    <section className="section-3">
+    <section className="home-section-3">
       <div className="bg-image">
         <div className="container">
           <div className="statement">
