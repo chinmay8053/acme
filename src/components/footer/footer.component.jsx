@@ -8,7 +8,7 @@ function Footer() {
     <div className="footer">
       <div className="support">
         <div className="logo">
-          <Link to="/">
+          <Link to="/" onClick={() => window.scrollTo(0, 0)}>
             <img
               className="img-logo"
               src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg"

@@ -4,7 +4,6 @@
   background-color: #921111f7;
   overflow: hidden;
   .fixed {
-    transition: 250ms all;
     background-color: #921111c7;
     position: fixed;
     backdrop-filter: blur(10px);
@@ -32,6 +31,7 @@
 
 @media (max-width: 600px) {
   .nav {
+    height: 50px;
     .nav-bar {
       height: 50px;
 

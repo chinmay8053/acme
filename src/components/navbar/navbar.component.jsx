@@ -23,11 +23,14 @@ function Navbar() {
   };
 
   useEffect(() => {
+    const navbar = document.querySelector(".fix");
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
-        document.querySelector(".fix").classList.add("fixed");
+        navbar.classList.add("fixed");
+        // navbar.style.transition = "150ms all";
       } else {
-        document.querySelector(".fix").classList.remove("fixed");
+        // navbar.style.transition = "none";
+        navbar.classList.remove("fixed");
       }
     });
   });
