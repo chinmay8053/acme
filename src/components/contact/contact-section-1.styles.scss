@@ -1,0 +1,114 @@
+.contact-section-1 {
+  box-sizing: border-box;
+  background-color: #222;
+  color: #fff;
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .bg-image {
+    background-image: linear-gradient(90deg, #222, rgba(34, 34, 34, 0.18) 76%), url("../../assests/girl_on_phone.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 550px;
+    width: 50%;
+    justify-self: flex-end;
+    // order: -1;
+  }
+  .postion {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 550px;
+    gap: 40px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .boxes {
+    display: flex;
+    gap: 25px;
+  }
+  .contact-box {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #222;
+    text-align: center;
+    padding: 50px 40px;
+    max-width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .icons {
+    padding-bottom: 20px;
+  }
+  //   .subtitle {
+  //   }
+  .statement {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  //   .section-btn {
+  //   }
+}
+
+@media (max-width: 1023px) {
+  .contact-section-1 {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    .bg-image {
+      order: -1;
+      height: 100px;
+      min-height: 300px;
+      width: 100%;
+      background-position: 50% 30%;
+      background-image: linear-gradient(0, #222, rgba(34, 34, 34, 0.18) 76%), url("../../assests/girl_on_phone.jpg");
+    }
+    .container {
+      gap: 80px;
+    }
+    .postion {
+      position: relative;
+    }
+    .title {
+      text-align: center;
+    }
+    .boxes {
+      padding: 0 20px;
+    }
+    .contact-box {
+      max-width: none;
+      text-align: center;
+      padding: 50px 23px;
+
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 677px) {
+  .contact-section-1 {
+    .boxes {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .contact-box {
+      width: 100%;
+    }
+  }
+}

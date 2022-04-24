@@ -1,0 +1,39 @@
+.contact-section-2 {
+  box-sizing: border-box;
+  padding: 80px 0;
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 35px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .address {
+    padding-bottom: 20px;
+    line-height: 1.5;
+  }
+  .contact-number {
+    line-height: 1.5;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .statement {
+  }
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
