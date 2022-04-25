@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "./about-section-4.styles.scss";
 function AboutSection4() {
+  const { t } = useTranslation();
   return (
     <section className="about-section-4">
       <div className="container">
@@ -10,12 +12,7 @@ function AboutSection4() {
             <img className="image" src={require("../../assests/jane2.png")} alt="face" />
           </div>
           <h2 className="name">John Doe</h2>
-          <p className="statement">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-            tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
-            erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
-            posuere.
-          </p>
+          <p className="statement">{t("aboutSection4.statement")}</p>
         </div>
 
         <div className="card">
@@ -23,12 +20,7 @@ function AboutSection4() {
             <img className="image" src={require("../../assests/jane1.png")} alt="face" />
           </div>
           <h2 className="name">John Doe</h2>
-          <p className="statement">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-            tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
-            erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
-            posuere.
-          </p>
+          <p className="statement">{t("aboutSection4.statement")}</p>
         </div>
       </div>
     </section>

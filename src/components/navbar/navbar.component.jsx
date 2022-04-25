@@ -4,15 +4,18 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./navbar.styles.scss";
 import { BootstrapButton } from "../custom-button/bootstrapButton.button";
+import i18n from "../../i18n";
+import LanguageIcon from "@mui/icons-material/Language";
 
 function Navbar() {
   const menuName = [
-    { to: "/", name: "Home" },
-    { to: "/about", name: "About" },
-    { to: "/donations", name: "Donate" },
-    { to: "/contact", name: "Contact" },
+    { to: "/", name: "Home", es: "Casa" },
+    { to: "/about", name: "About", es: "Acerca de" },
+    { to: "/donations", name: "Donate", es: "Donar" },
+    { to: "/contact", name: "Contact", es: "Contacto" },
   ];
   const [anchorElNav, setAnchorElNav] = useState(null);
+  const [i18nElNav, seti18nElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -27,9 +30,7 @@ function Navbar() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         navbar.classList.add("fixed");
-        // navbar.style.transition = "150ms all";
       } else {
-        // navbar.style.transition = "none";
         navbar.classList.remove("fixed");
       }
     });
@@ -50,16 +51,77 @@ function Navbar() {
           </div>
 
           <div className="menu-bar">
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, alignItems: "center" }}>
               <div className="menu">
-                {menuName.map(({ to, name }, idx) => (
+                {menuName.map(({ to, name, es }, idx) => (
                   <Link to={to} key={idx}>
                     <BootstrapButton sx={{ color: "#eee" }} variant="contained">
-                      {name}
+                      {i18n.language === "en" ? name : es}
                     </BootstrapButton>
                   </Link>
                 ))}
               </div>
+              <div
+                onClick={(e) => {
+                  seti18nElNav(e.currentTarget);
+                }}
+              >
+                <LanguageIcon sx={{ margin: "0 10px", cursor: "pointer", color: "white" }} />
+              </div>
+              <Menu
+                id="menu-appbar"
+                anchorEl={i18nElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(i18nElNav)}
+                onClose={(e) => seti18nElNav(null)}
+              >
+                <BootstrapButton
+                  sx={{
+                    display: "block",
+                    width: "200px",
+                    color: "black",
+                    borderRadius: 0,
+                    "&:hover": {
+                      color: "white",
+                      backgroundColor: "brown",
+                    },
+                  }}
+                  onClick={() => {
+                    seti18nElNav(null);
+                    i18n.changeLanguage("en");
+                  }}
+                  variant="contained"
+                >
+                  english
+                </BootstrapButton>
+                <BootstrapButton
+                  sx={{
+                    display: "block",
+                    width: "200px",
+                    color: "black",
+                    borderRadius: 0,
+                    "&:hover": {
+                      color: "white",
+                      backgroundColor: "brown",
+                    },
+                  }}
+                  onClick={() => {
+                    seti18nElNav(null);
+                    i18n.changeLanguage("es");
+                  }}
+                  variant="contained"
+                >
+                  spanish
+                </BootstrapButton>
+              </Menu>
             </Box>
             {/* ------------------------DropDown------------------------------------------------ */}
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

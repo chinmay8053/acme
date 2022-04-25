@@ -1,24 +1,23 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "./home-section-2.styles.scss";
 
 function HomeSection2() {
+  const { t } = useTranslation();
   return (
     <section className="home-section-2">
       <div className="container">
         <div className="grid-5">
           <div className="intro">
-            <span>WAYS TO SUPPORT</span>
-            <p>Support Acme Outdoors.</p>
+            <span>{t("homeSection2.intro.span")}</span>
+            <p>{t("homeSection2.intro.p")}</p>
           </div>
-          <div className="covid">
-            COVID-19 has forced us to close our retail space, but we need support from patrons like yourself now more
-            than ever. Below, we’ve listed the best ways to help us through this season.
-          </div>
+          <div className="covid">{t("homeSection2.covid")}</div>
           <div className="card-info">
             <div className="square" data-01>
-              <div className="number">01</div>
-              <div className="title">SHOP PRODUCTS</div>
+              <div className="number">{t("homeSection2.card-info-1.no")}</div>
+              <div className="title">{t("homeSection2.card-info-1.title")}</div>
               <div className="shape">
                 <img
                   src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57a5836db2a07bab0e3_Circle.svg"
@@ -26,16 +25,13 @@ function HomeSection2() {
                 />
               </div>
             </div>
-            <p className="message">
-              Our full product line is still available online here on our site! Getting outside and hiking is still
-              something you can do. Get your gear now!
-            </p>
+            <p className="message">{t("homeSection2.card-info-1.message")}</p>
           </div>
 
           <div className="card-info">
             <div className="square">
-              <div className="number">02</div>
-              <div className="title">DONATE</div>
+              <div className="number">{t("homeSection2.card-info-2.no")}</div>
+              <div className="title">{t("homeSection2.card-info-2.title")}</div>
               <div className="shape">
                 <img
                   data-tri
@@ -44,16 +40,13 @@ function HomeSection2() {
                 />
               </div>
             </div>
-            <p className="message">
-              Since we've changed the way we operate to online only, and to ensure your safety, not all our staff is
-              working. Donate to keep them afloat.
-            </p>
+            <p className="message">{t("homeSection2.card-info-2.message")}</p>
           </div>
 
           <div className="card-info">
             <div className="square">
-              <div className="number">03</div>
-              <div className="title">BUY GIFT CARDS</div>
+              <div className="number">{t("homeSection2.card-info-3.no")}</div>
+              <div className="title">{t("homeSection2.card-info-3.title")}</div>
               <div className="shape">
                 <img
                   data-square
@@ -62,10 +55,7 @@ function HomeSection2() {
                 />
               </div>
             </div>
-            <p className="message">
-              Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and
-              family.
-            </p>
+            <p className="message">{t("homeSection2.card-info-3.message")}</p>
           </div>
         </div>
       </div>

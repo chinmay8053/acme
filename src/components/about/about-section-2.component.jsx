@@ -1,17 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./about-section-2.styles.scss";
 
 function AboutSection2() {
+  const { t } = useTranslation();
+
   return (
     <section className="about-section-2">
       <div className="container">
         <div className="intro">
-          <span className="ask">WHY ACME OUTDOORS?</span>
-          <h1 className="intro-title">We’re the best in the business.</h1>
-          <p className="intro-info">
-            From more than 30 years, we’ve been leading the way across Oklahoma — creating the best possible customer
-            experience since 1989.
-          </p>
+          <span className="ask">{t("aboutSection2.ask")}</span>
+          <h1 className="intro-title">{t("aboutSection2.intro-title")}</h1>
+          <p className="intro-info">{t("aboutSection2.intro-info")}</p>
         </div>
         <div className="services">
           <div className="service">
@@ -21,10 +21,8 @@ function AboutSection2() {
                 alt="Lifetime Warranty"
               />
             </div>
-            <h2 className="service-title">Lifetime Warranty</h2>
-            <p className="service-info">
-              All our products — whether we make them or not — are backed by our lifetime warranty.
-            </p>
+            <h2 className="service-title">{t("aboutSection2.service-title-1")}</h2>
+            <p className="service-info">{t("aboutSection2.service-info")}</p>
           </div>
           <div className="service">
             <div className="service-icon">
@@ -33,10 +31,8 @@ function AboutSection2() {
                 alt="Shopping Experience"
               />
             </div>
-            <h2 className="service-title">Shopping Experience</h2>
-            <p className="service-info">
-              All our products — whether we make them or not — are backed by our lifetime warranty.
-            </p>
+            <h2 className="service-title">{t("aboutSection2.service-title-2")}</h2>
+            <p className="service-info">{t("aboutSection2.service-info")}</p>
           </div>
           <div className="service">
             <div className="service-icon">
@@ -45,10 +41,8 @@ function AboutSection2() {
                 alt="On-time Delivery"
               />
             </div>
-            <h2 className="service-title">On-time Delivery</h2>
-            <p className="service-info">
-              All our products — whether we make them or not — are backed by our lifetime warranty.
-            </p>
+            <h2 className="service-title">{t("aboutSection2.service-title-3")}</h2>
+            <p className="service-info">{t("aboutSection2.service-info")}</p>
           </div>
           <div className="service">
             <div className="service-icon">
@@ -57,10 +51,8 @@ function AboutSection2() {
                 alt="Best in Class Service"
               />
             </div>
-            <h2 className="service-title">Best in Class Service</h2>
-            <p className="service-info">
-              All our products — whether we make them or not — are backed by our lifetime warranty.
-            </p>
+            <h2 className="service-title">{t("aboutSection2.service-title-4")}</h2>
+            <p className="service-info">{t("aboutSection2.service-info")}</p>
           </div>
         </div>
       </div>

@@ -1,10 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { BootstrapButton } from "../custom-button/bootstrapButton.button";
 
 import "./donations-section-2.styles.scss";
 
 function DonationsSection2() {
+  const { t } = useTranslation();
   const dolar = [100, 50, 25, 15, 5];
   return (
     <section className="donate-section-2">
@@ -22,7 +24,7 @@ function DonationsSection2() {
                   fontSize: "18px",
                 }}
               >
-                Donate ${item}
+                {t("donateSection2.donate")} ${item}
               </BootstrapButton>
             </Link>
           ))}

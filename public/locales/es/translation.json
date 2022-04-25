@@ -1,0 +1,86 @@
+{
+  "homeSection1": {
+    "title": "A su servicio desde 1989",
+    "Statement": "Acme Outdoors es una tienda de aventuras y actividades al aire libre ubicada en Boathouse District en Oklahoma City."
+  },
+  "homeSection2": {
+    "intro": {
+      "span": "MANERAS DE APOYAR",
+      "p": "Apoye Acme al aire libre."
+    },
+    "covid": "COVID-19 nos ha obligado a cerrar nuestro espacio comercial, pero ahora más que nunca necesitamos el apoyo de clientes como usted. A continuación, enumeramos las mejores maneras de ayudarnos durante esta temporada.",
+    "card-info-1": {
+      "no": "01",
+      "title": "COMPRAR PRODUCTOS",
+      "message": "¡Nuestra línea completa de productos todavía está disponible en línea aquí en nuestro sitio! Conseguir y hacer senderismo sigue siendo algo que puedes hacer. ¡Consigue tu equipo ahora!"
+    },
+    "card-info-2": {
+      "no": "02",
+      "title": "DONAR",
+      "message": "Dado que hemos cambiado la forma en que operamos solo en línea y para garantizar su seguridad, no todo nuestro personal está trabajando. Dona para mantenerlos a flote."
+    },
+    "card-info-3": {
+      "no": "03",
+      "title": "COMPRAR TARJETAS DE REGALO",
+      "message": "¿Tienes todo el equipo para actividades al aire libre que necesitas por ahora? Compre una tarjeta de regalo y utilícela más tarde o compártala con amigos y familiares."
+    }
+  },
+  "homeSection3": {
+    "title": "Cómo lo mantenemos a salvo durante el COVID-19",
+    "instruction": "Como tienda al aire libre, hemos tomado medidas de precaución para garantizar la seguridad de todos nuestros clientes y miembros del equipo."
+  },
+  "homeSection5": {
+    "title": "Compra local.",
+    "p1": "Sabemos que durante COVID-19, muchas personas en la ciudad y el estado se sienten inquietas por el futuro; tampoco estamos seguros de lo que depara el futuro.",
+    "p2": "Dicho esto: sabemos que nos encanta asegurarnos de que tengas el equipo que necesitas para tus aventuras, y seguiremos haciéndolo, con nuestro equipo, hasta que la ciudad nos diga que no podemos.",
+    "p3": "Pero mientras la gente como usted apoye a las pequeñas empresas de la ciudad, estaremos aquí, todos los días, asegurándonos de que sus pedidos lleguen a tiempo."
+  },
+
+  "aboutSection1": {
+    "title": "Tu aventura te espera",
+    "Statement": "Acme Outdoors tiene todo lo que necesita para ayudarlo a comenzar hoy. Echa un vistazo a nuestra maravillosa colección de equipo que hará que tu próxima aventura sea completa."
+  },
+  "aboutSection2": {
+    "ask": "¿POR QUÉ ACME AL AIRE LIBRE?",
+    "intro-title": "Somos los mejores en el negocio.",
+    "intro-info": "Durante más de 30 años, hemos liderado el camino en Oklahoma, creando la mejor experiencia posible para el cliente desde 1989.",
+    "service-info": "Todos nuestros productos, ya sea que los fabriquemos o no, están respaldados por nuestra garantía de por vida.",
+    "service-title-1": "Garantía de por vida",
+    "service-title-2": "Experiencia en compras",
+    "service-title-3": "El tiempo de entrega",
+    "service-title-4": "El mejor servicio de su clase"
+  },
+  "aboutSection3": {
+    "title": "Conozca a los propietarios",
+    "p1": "John y Jane se conocieron en una aventura de mochileros en Nepal. John, un ex esquilador de ovejas, se embarcó en el viaje para obtener algo de claridad sobre sus próximas aventuras en la vida. Jane, una instructora de Peloton, se fue de viaje para explorar el paisaje de Nepal.",
+    "p2": " Durante el viaje, John y Jane se dieron cuenta de que tenían un amor en común: el amor por las caminatas y el amor por estar al aire libre.",
+    "p3": "Al regresar a su estado natal de Oklahoma, John y Jane tramaron un plan para lanzar una tienda minorista centrada en sus pasiones.",
+    "p4": "Mientras que John manejaba el abastecimiento de bienes y el servicio al cliente, Jane se centró en el lado web + comercio electrónico del negocio, creando este sitio web en la mejor plataforma de diseño en la web: ¡Webflow!",
+    "p5": "En 1989, John y Jane Doe lanzaron oficialmente Acme Outdoors, la principal tienda para los entusiastas de las actividades al aire libre en todo el estado.",
+    "p6": "Hasta el día de hoy, John y Jane regresan a Nepal todos los años para asegurarse de que nunca olviden sus raíces y de dónde vienen."
+  },
+  "aboutSection4": {
+    "statement": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+  },
+  "aboutSection5": {
+    "title": "¿Necesitas ayuda?",
+    "statement": "¿Necesita ayuda o asistencia? Nuestro equipo está listo para asegurarse de que obtenga la ayuda que necesita. Ya sea que necesite ajustar un pedido o los detalles de la entrega, ¡estamos listos para ayudarlo!"
+  },
+
+  "donateSection1": {
+    "title": "Aquí en Acme al aire libre",
+    "sub-title": "cada dolar cuenta",
+    "statement": " Acme Outdoors es más que una empresa, somos una comunidad de personas que se preocupan unos por otros y por nuestra ciudad. Durante este tiempo, debido a las órdenes de refugio en el lugar, solo unos pocos de nuestro personal pueden trabajar. Cualquier donación que haga a Acme ayudará a garantizar que nuestros empleados estén bien atendidos y puedan mantenerse a salvo en estos tiempos inciertos."
+  },
+  "donateSection2": {
+    "donate": "Donar"
+  },
+
+  "contactSection1": {
+    "title": "Contacte a Acme Outdoor",
+    "contact": "Contacta con nosotros",
+    "contact-statement": "Solo quiere decir hola? Nos encantaría saber de usted. ¡Amamos a nuestros clientes y comunidad!",
+    "support": "Obtener apoyo",
+    "support-statement": "¿Tiene algún problema con un pedido o con un producto que nos compró? Complete nuestro formulario de soporte."
+  }
+}

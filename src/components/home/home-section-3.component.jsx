@@ -1,18 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { BootstrapButton } from "../custom-button/bootstrapButton.button";
 
 import "./home-section-3.styles.scss";
 function HomeSection3() {
+  const { t } = useTranslation();
   return (
     <section className="home-section-3">
       <div className="bg-image">
         <div className="container">
           <div className="statement">
-            <div className="title">How we're keeping you safe during COVID-19</div>
-            <div className="instruction">
-              As an outdoor shop, we’ve taken precautionary measures to ensure the safety of all our customers and team
-              members.
-            </div>
+            <div className="title">{t("homeSection3.title")}</div>
+            <div className="instruction">{t("homeSection3.instruction")}</div>
             <div className="statement-btn">
               <BootstrapButton
                 sx={{

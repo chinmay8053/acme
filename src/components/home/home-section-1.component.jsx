@@ -1,15 +1,18 @@
 import React from "react";
 import { BootstrapButton } from "../custom-button/bootstrapButton.button";
+import { useTranslation } from "react-i18next";
 
 import "./home-section-1.styles.scss";
 
 function HomeSection1() {
+  const { t } = useTranslation();
+
   return (
     <section className="home-section-1">
       <div className="section-hero">
         <div className="section-intro">
-          <h1>Serving you since 1989.</h1>
-          <p>Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma City.</p>
+          <h1>{t("homeSection1.title")}</h1>
+          <p>{t("homeSection1.Statement")}</p>
           <div className="section-btn">
             <BootstrapButton
               sx={{

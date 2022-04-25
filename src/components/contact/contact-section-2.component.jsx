@@ -1,6 +1,6 @@
-import { TextField } from "@mui/material";
 import React from "react";
 import { BootstrapButton } from "../custom-button/bootstrapButton.button";
+import { CssTextField } from "./contact-section-2.styles";
 
 import "./contact-section-2.styles.scss";
 function ContactSection2() {
@@ -23,19 +23,19 @@ function ContactSection2() {
           <h2 className="title">Contact Form</h2>
           <p className="statement">Send us a message and we'll get back to you as soon as we can!</p>
           <div className="form-input">
-            <TextField
+            <CssTextField
               helperText="Please enter your name"
               id="demo-helper-text-aligned"
               label="Name"
               variant="outlined"
             />
-            <TextField
+            <CssTextField
               helperText="Please enter your Email Address"
               id="demo-helper-text-aligned"
               label="Email"
               variant="outlined"
             />
-            <TextField
+            <CssTextField
               helperText="word between 10 t0 20"
               id="demo-helper-text-aligned"
               label="Message"

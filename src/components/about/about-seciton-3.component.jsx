@@ -1,8 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import "./about-section-3.styles.scss";
 
 function AboutSection3() {
+  const { t } = useTranslation();
   return (
     <section className="about-section-3">
       <div className="container">
@@ -13,33 +15,14 @@ function AboutSection3() {
         </div>
         <div className="info-card">
           <div className="box">
-            <h2 className="title">Meet the Owners</h2>
+            <h2 className="title">{t("aboutSection3.title")}</h2>
             <div className="statement">
-              <p>
-                John and Jane met on a backpacking adventure in Nepal. John, a former sheep shearer, went on the trip to
-                get some clarity about his next adventures in life. Jane — a Peloton instructor — went on the trip to
-                explore the landscape in Nepal.
-              </p>
-              <p>
-                While on the trip, John and Jane realized that they had one common love — the love for hiking and the
-                love for being outdoors.
-              </p>
-              <p>
-                Returning back to their home state of Oklahoma, John and Jane hatched a plan to launch a retail store
-                centered around their passions.
-              </p>
-              <p>
-                While John handled the sourcing of goods and customer service, Jane focused on the web + e-commerce side
-                of the business, building this website in the best design platform on the web — Webflow!
-              </p>
-              <p>
-                In 1989, John and Jane Doe officially launched Acme Outdoors, the premiere store for outdoor enthusiasts
-                around the state.
-              </p>
-              <p>
-                To this day, John and Jane return to Nepal yearly to ensure that they never forget their roots and where
-                they came from.
-              </p>
+              <p>{t("aboutSection3.p1")}</p>
+              <p>{t("aboutSection3.p2")}</p>
+              <p>{t("aboutSection3.p3")}</p>
+              <p>{t("aboutSection3.p4")}</p>
+              <p>{t("aboutSection3.p5")}</p>
+              <p>{t("aboutSection3.p6")}</p>
             </div>
           </div>
         </div>

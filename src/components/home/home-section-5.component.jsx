@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./home-section-5.styles.scss";
 function HomeSection5() {
+  const { t } = useTranslation();
   return (
     <section className="home-section-5">
       <div className="container">
@@ -11,20 +13,11 @@ function HomeSection5() {
         {/* ---------------------------hover-------------- */}
         <div className="covid-box">
           <div className="box">
-            <div className="title">Shop Local.</div>
+            <div className="title">{t("homeSection5.title")}</div>
             <div className="instruction">
-              <p>
-                We know that during COVID-19, a lot of folks around the city and state are feeling uneasy about the
-                future - we’re not sure what the future holds either.
-              </p>
-              <p>
-                That said: we know that we love making sure you have the gear you need for your adventures, and we’re
-                going to keep doing that - with our team - until the city tells us we can’t.
-              </p>
-              <p>
-                But as long as folks like yourself support small businesses around the city, then we’ll be here — every
-                day, making sure your orders arrive on time.
-              </p>
+              <p>{t("homeSection5.p1")}</p>
+              <p>{t("homeSection5.p2")}</p>
+              <p>{t("homeSection5.p3")}</p>
               <hr />
               <p className="names">Jane & John Doe Acme Outdoors</p>
             </div>
